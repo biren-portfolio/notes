@@ -1,6 +1,6 @@
 # distributed system design
 
-Single node patterns (application container assumes that it is talking 
+Single node patterns (application container assumes that it is talking to a service on localhost but communication is routed through another container)
 
 1) Sidecar pattern - this pattern is used to add/enhance functionality of application containers (kind of decorator for app container). There are certain scenarios we can handle using this pattern-
 * If we want to create separate reusable modules for authorization, authentication, encryption for example. These sidecar containers can be used by other application containers as they are independent and not tightly coupled.
